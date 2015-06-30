@@ -1,0 +1,64 @@
+<html>
+<!--  1236 : Key:YeahYourMind
+    Author: Tracy_梓朋
+    Url : www.purpleroc.com
+
+What should you do now?
+200
+以前考试的时候，发现越是描述的比较简单的题目，往往越复杂。但是这道题可不一样偶，快来试试吧！
+
+
+
+    -->
+
+<head>
+    <script language=javascript>
+        var chr = "1311|1337|1357|1294|1325|1337|1333|1340|1325|1347|1353|1350|1313|1341|1346|1336|";
+        var str = "";
+
+        function a( arg )
+        {
+            var i,k;
+            i = "";
+            for( k = 0; k < chr.length; k ++ )
+            {
+                if( chr.charAt(k) == '|' )
+                {
+                    i -= arg;
+                    str += String.fromCharCode(i);
+                    i = "";
+                }
+                else
+                {
+                    i += chr.charAt(k);
+                }
+            }
+        }
+
+        function b()
+        {
+            var i;
+            var containsLetterPattern = /^.*?[a-zA-Z]+.*$/g;
+            var containsDigitPattern = /^.*?[\d]+.*$/g;
+            for (i = 0; i < 10000; i++)
+            {
+                str = "";
+                a( i );
+
+                str.toString()
+                if (containsLetterPattern.test(str) || containsLetterPattern.test(str))
+                {
+                     document.write( i + ' : ' + str + '<br>');
+                }
+            }
+        }
+
+</script>
+</head>
+<body>
+<div style="margin-left:50px;color: #0e0e0e0e">Click to get Flag!<br><br>
+</div>
+<center>
+    <input type=text name=pass> <input type=submit onclick=b()> <br> <font color = "#FFFFFF"><br></font> </center> </body> </html>
+
+
