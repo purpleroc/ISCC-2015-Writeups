@@ -7,8 +7,8 @@
 
 加油～～ 
 
-#目录结构介绍
-* FILE————ISCC2015所有能下载下来的题目。  
+##目录结构介绍
+* FILES————ISCC2015所有能下载下来的题目。  
 * python————做题时写下的单个题目的writeup。
 * media————writeup中的截图。
 * ISCC2015-Writeup.md————汇总python文件夹中所有Writeup。
